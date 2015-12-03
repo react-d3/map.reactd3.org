@@ -1,0 +1,26 @@
+{
+  "name": "react-d3-map",
+  "version": "0.0.1",
+  "description": "Official site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npm install && git submodule init && git submodule update",
+    "sync": "git submodule foreach git pull"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-d3/map.reactd3.org.git"
+  },
+  "keywords": [
+    "react-d3",
+    "react-d3-map"
+  ],
+  "author": "chilijung",
+  "bugs": {
+    "url": "https://github.com/react-d3/map.reactd3.org/issues"
+  },
+  "homepage": "https://github.com/react-d3/map.reactd3.org",
+  "dependencies": {
+  },
+  "devDependencies": {}
+}
