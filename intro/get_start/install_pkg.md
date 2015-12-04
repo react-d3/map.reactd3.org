@@ -1,9 +1,14 @@
-Pick one `react-d3` you want to install (see [components](/components)). Here we are going to demo using `react-d3-basic` library to draw a simple line chart.
+Pick one `react-d3-map` component you want to install, such as:
 
-Install `react-d3-basic`:
+- react-d3-map: https://github.com/react-d3/react-d3-map
+- react-d3-map-bubble: https://github.com/react-d3/react-d3-map-bubble
+- react-d3-map-choropleth: https://github.com/react-d3/react-d3-map-choropleth
+- react-d3-map-orthographic: https://github.com/react-d3/react-d3-map-orthographic
+
+Install `react-d3-map`:
 
 ```
-npm install --save react-d3-basic
+npm install --save react-d3-map
 ```
 
 `react-d3` packages require to be bundled with `webpack` or `browserify`
@@ -21,7 +26,7 @@ var js_dist = path.join(__dirname, './dist');
 module.exports = [{
   name: 'chartComponent',
   entry: {
-    line: './line.jsx',
+    line: './map.jsx',
   },
 
   output: {
@@ -40,12 +45,6 @@ module.exports = [{
 
   resolve: {
     extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx']
-  },
-  // we need d3 in ProvidePlugin.
-  plugins: [
-    new webpack.ProvidePlugin({
-      'd3': 'd3'
-    })
-  ]
+  }
 }];
 ```

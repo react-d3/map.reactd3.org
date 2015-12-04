@@ -100,7 +100,7 @@
                       </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                          <a href="http://github.com/react-d3/react-d3-map-core">Github</a>
+                          <a href="http://github.com/react-d3">Github</a>
                         </li>
                     </ul>
                 </div>
@@ -120,8 +120,8 @@
                     <!-- HOME CONTENT -->
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="home-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                            <h1>Painless building d3 maps</h1>
-                            <p>A whole new solution for building reusable components for d3 maps</p>
+                            <h1>A Javascript Library For Building Composable And Declarative Maps</h1>
+                            <p>A whole new solution for building reusable components for your maps</p>
                         </div>
                     </div>
                     <!-- END HOME CONTENT -->
@@ -154,7 +154,7 @@
                                   <div class="col-md-12">
                                       <div class="service-content">
                                           <h3>Preserve d3 flexibility</h3>
-                                          <p><code>react-d3</code> is a highly module library. You can build new d3 charts using <code>react-d3</code> to create axis using <code>xaxis</code> component,  <code>yaxis</code> component, label using <code>label</code> component, legend <code>legend</code> component... etc, in other word, it extends the flexibility of <code>d3</code> library so you can assemble a whole new chart using core components.</p>
+                                          <p><code>react-d3-map</code> is a highly modular map library. You can build new interactive maps like leaflet, openlayers. And you could also build customized data visualization maps you love! </p>
                                       </div>
                                   </div>
                               </div>
@@ -166,7 +166,7 @@
                                   <div class="col-md-12">
                                       <div class="service-content">
                                           <h3>Provide high level chart library</h3>
-                                          <p><code>react-d3</code> support high level components which you can install and create a line chart, bar chart, pie chart... etc, within a component.</p>
+                                          <p><code>react-d3-map</code> support high level components that you can build your shapes like polygons, points, markers, lines ... etc. By importing the exact module you need.</p>
                                       </div>
                                   </div>
                               </div>
@@ -178,7 +178,7 @@
                                   <div class="col-md-12">
                                       <div class="service-content">
                                           <h3>Better data flow, and structures</h3>
-                                          <p><code>react-d3</code> combine the power of <code>d3</code> flexibility and the data flow, structures, components, virtual DOM, and others benefits that <code>react.js</code> provide.</p>
+                                          <p><code>react-d3-map</code> combine the power of <code>d3</code> flexibility and the data flow, structures, components, virtual DOM, and others benefits that <code>react.js</code> provide.</p>
                                       </div>
                                   </div>
                               </div>
@@ -194,6 +194,144 @@
             <div class="container">
                 <h2 class="section-title wow fadeIn">Demo</h2>
                 <div class="row text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                      <div class="markdown-body">
+                          <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                              <div class="row" style="margin-bottom:20px">
+                                  <div class="service-content">
+                                      <h1 id="building-a-interactive-map">Building a interactive map</h1>
+<p><code>react-d3-map</code> can make you easily build interactive map just like leaflet, openlayers. But we replace layers with SVG components. Which can make us access to DOM more easily.</p>
+<p></p><div id="blank-point" class="demo"></div><p></p>
+<script src="/react-d3-example/dist/map_detail/min/interactive_marker.min.js"></script>
+
+<pre><code class="lang-js">ReactDOM.render(
+  &lt;Map
+    width= {width}
+    height= {height}
+    scale= {scale}
+    scaleExtent= {scaleExtent}
+    center= {center}
+  &gt;
+    &lt;MarkerGroup
+      key= {"polygon-test"}
+      data= {data}
+      popupContent= {popupContent}
+      onClick= {onMarkerClick}
+      onCloseClick= {onMarkerCloseClick}
+      onMouseOver= {onMarkerMouseOver}
+      onMouseOut= {onMarkerMouseOut}
+      markerClass= {"your-marker-css-class"}
+    /&gt;
+  &lt;/Map&gt;
+, document.getElementById('blank-point')
+)
+</code></pre>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="markdown-body">
+                          <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                              <div class="row" style="margin-bottom:20px">
+                                  <div class="service-content">
+                                      <h1 id="map-choropleth">Map choropleth</h1>
+<p><code>react-d3-map-choropleth</code> provide high level component, that you can build your choropleth map plot in ease.</p>
+<p></p><div id="blank-twpopulation" class="demo"></div><p></p>
+<script src="/react-d3-example/dist/map_detail/min/twpopulation.min.js"></script>
+
+<pre><code class="lang-js">ReactDOM.render(
+  &lt;MapChoropleth
+    width= {width}
+    height= {height}
+    dataPolygon= {dataCounties}
+    dataMesh= {dataMeshCounties}
+    scale= {scale}
+    domain= {domain}
+    domainData= {valArr}
+    domainValue= {domainValue}
+    domainKey= {domainKey}
+    mapKey = {mapKey}
+    center= {center}
+    projection= {projection}
+    showGraticule= {false}
+    tooltipContent= {tooltipContent}
+    showTooltip= {true}
+    showTile= {true}
+  /&gt;
+, document.getElementById('blank-twpopulation')
+)
+</code></pre>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="markdown-body">
+                          <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                              <div class="row" style="margin-bottom:20px">
+                                  <div class="service-content">
+                                      <h1 id="map-bubble">Map bubble</h1>
+<p><code>react-d3-map-bubble</code> provide high level component, that you can build your bubble map plot in ease.</p>
+<p></p><div id="blank-earthquake" class="demo"></div><p></p>
+<script src="/react-d3-example/dist/map_detail/min/earthquake.min.js"></script>
+
+<pre><code class="lang-js">ReactDOM.render(
+  &lt;MapBubble
+    width= {width}
+    height= {height}
+    domain= {domain}
+    dataCircle= {circles}
+    circleValue= {circleValue}
+    circleClass= {'bubble'}
+    circleX= {circleX}
+    circleY= {circleY}
+    tooltipContent= {tooltipContent}
+    projection= {projection}
+    precision= {precision}
+    translate= {translate}
+    scale= {scale}
+    showGraticule= {true}
+    showTooltip= {true}
+    showLegend= {false}
+    showTile= {true}
+  /&gt;
+, document.getElementById('blank-earthquake')
+)
+</code></pre>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="markdown-body">
+                          <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                              <div class="row" style="margin-bottom:20px">
+                                  <div class="service-content">
+                                      <h1 id="map-with-orthographic">Map with orthographic</h1>
+<p>Using components in <code>react-d3-map</code> and <code>react-d3-map-core</code>, you can build your own reusable maps, such as orthographic in maps.</p>
+<p></p><div id="blank-multipolygon" class="demo"></div><p></p>
+<script src="/react-d3-example/dist/map_detail/min/ortho_polygon.min.js"></script>
+
+<pre><code class="lang-js">ReactDOM.render(
+  &lt;MapOrthographic
+    width= {width}
+    height= {height}
+    scale= {scale}
+    scaleExtent= {scaleExtent}
+    center= {center}
+    clip={true}
+    bounds={[[0, 0], [width, height]]}
+  &gt;
+    &lt;Container/&gt;
+  &lt;/MapOrthographic&gt;
+, document.getElementById('blank-multipolygon')
+)
+</code></pre>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                 </div>
                 <!--.row-->
             </div>

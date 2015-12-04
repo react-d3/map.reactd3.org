@@ -115,7 +115,7 @@ a:hover {
 ================================================ */
 
 #home-area {
-    background: url(/img/basic/cover.png) no-repeat;
+    background: url(/img/map.png) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -409,31 +409,31 @@ footer {
 }
 
 /* active & hover links */
-.bs-docs-sidebar .nav>.active>a, 
-.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-    text-decoration: none;          
+    text-decoration: none;
     background: #24C0D9;
     color: #fff;
 }
 /* all active links */
-.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>.active:hover>a,
 .bs-docs-sidebar .nav>.active:focus>a {
 }
 /* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active>a,
 .bs-docs-sidebar .nav .nav>.active:hover>a,
 .bs-docs-sidebar .nav .nav>.active:focus>a {
 }
 
 /* hide inactive nested list */
 .bs-docs-sidebar .nav ul.nav {
-    display: none;           
+    display: none;
 }
 /* show active nested list */
 .bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;           
+    display: block;
 }
 
 @media all and (max-width: 900px) {
@@ -441,4 +441,3 @@ footer {
     display: none;
   }
 }
-
