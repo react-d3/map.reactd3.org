@@ -44,14 +44,8 @@
             margin: 0 auto;
             padding: 30px;
         }
-
-        .legend {
-          height: 30px !important;
-        }
-
-        #area-stack .x.axis text{
-          transform: rotate(45deg);
-          text-anchor: start !important;
+        .glyphicon {
+          padding-right: 10px;
         }
     </style>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -91,9 +85,9 @@
                         <li>
                           <a href="/get_start">Get Started</a>
                         </li>
-                        <li>
+                        <!-- <li>
                           <a href="/docs">Docs</a>
-                        </li>
+                        </li> -->
                         <li>
                           <a href="/gallery">Gallery</a>
                         </li>
@@ -153,7 +147,7 @@
                               <div class="row" style="margin-bottom:20px">
                                   <div class="col-md-12">
                                       <div class="service-content">
-                                          <h3>&lt;span class="glyphicon glyphicon-refresh"&gt;&lt;/span&gt;Preserve d3 flexibility</h3>
+                                          <h3><span class="glyphicon glyphicon-refresh"></span>Preserve d3 flexibility</h3>
                                           <p><code>react-d3-map</code> is a highly modular map library. You can build new interactive maps like leaflet, openlayers. And you could also build customized data visualization maps you love! </p>
                                       </div>
                                   </div>
@@ -165,7 +159,7 @@
                               <div class="row" style="margin-bottom:20px">
                                   <div class="col-md-12">
                                       <div class="service-content">
-                                          <h3>&lt;span class="glyphicon glyphicon-stats"&gt;&lt;/span&gt;Provide high level chart library</h3>
+                                          <h3><span class="glyphicon glyphicon-stats"></span>Provide high level chart library</h3>
                                           <p><code>react-d3-map</code> support high level components that you can build your shapes like polygons, points, markers, lines ... etc. By importing the exact module you need.</p>
                                       </div>
                                   </div>
@@ -177,7 +171,7 @@
                               <div class="row" style="margin-bottom:20px">
                                   <div class="col-md-12">
                                       <div class="service-content">
-                                          <h3>&lt;span class="glyphicon glyphicon-retweet"&gt;&lt;/span&gt;Better data flow, and structures</h3>
+                                          <h3><span class="glyphicon glyphicon-retweet"></span>Better data flow, and structures</h3>
                                           <p><code>react-d3-map</code> combine the power of <code>d3</code> flexibility and the data flow, structures, components, virtual DOM, and others benefits that <code>react.js</code> provide.</p>
                                       </div>
                                   </div>
@@ -223,42 +217,6 @@
     /&gt;
   &lt;/Map&gt;
 , document.getElementById('blank-point')
-)
-</code></pre>
-
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="markdown-body">
-                          <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                              <div class="row" style="margin-bottom:20px">
-                                  <div class="service-content">
-                                      <h1 id="map-choropleth">Map choropleth</h1>
-<p><code>react-d3-map-choropleth</code> provide high level component, that you can build your choropleth map plot in ease.</p>
-<p></p><div id="blank-twpopulation" class="demo"></div><p></p>
-<script src="/react-d3-example/dist/map_detail/min/twpopulation.min.js"></script>
-
-<pre><code class="lang-js">ReactDOM.render(
-  &lt;MapChoropleth
-    width= {width}
-    height= {height}
-    dataPolygon= {dataCounties}
-    dataMesh= {dataMeshCounties}
-    scale= {scale}
-    domain= {domain}
-    domainData= {valArr}
-    domainValue= {domainValue}
-    domainKey= {domainKey}
-    mapKey = {mapKey}
-    center= {center}
-    projection= {projection}
-    showGraticule= {false}
-    tooltipContent= {tooltipContent}
-    showTooltip= {true}
-    showTile= {true}
-  /&gt;
-, document.getElementById('blank-twpopulation')
 )
 </code></pre>
 
@@ -325,6 +283,42 @@
     &lt;Container/&gt;
   &lt;/MapOrthographic&gt;
 , document.getElementById('blank-multipolygon')
+)
+</code></pre>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="markdown-body">
+                          <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                              <div class="row" style="margin-bottom:20px">
+                                  <div class="service-content">
+                                      <h1 id="map-choropleth">Map choropleth</h1>
+<p><code>react-d3-map-choropleth</code> provide high level component, that you can build your choropleth map plot in ease.</p>
+<p></p><div id="blank-twpopulation" class="demo"></div><p></p>
+<script src="/react-d3-example/dist/map_detail/min/twpopulation.min.js"></script>
+
+<pre><code class="lang-js">ReactDOM.render(
+  &lt;MapChoropleth
+    width= {width}
+    height= {height}
+    dataPolygon= {dataCounties}
+    dataMesh= {dataMeshCounties}
+    scale= {scale}
+    domain= {domain}
+    domainData= {valArr}
+    domainValue= {domainValue}
+    domainKey= {domainKey}
+    mapKey = {mapKey}
+    center= {center}
+    projection= {projection}
+    showGraticule= {false}
+    tooltipContent= {tooltipContent}
+    showTooltip= {true}
+    showTile= {true}
+  /&gt;
+, document.getElementById('blank-twpopulation')
 )
 </code></pre>
 

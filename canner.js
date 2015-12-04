@@ -34,13 +34,13 @@ module.exports = [{
             "md": "./intro/demo/demo_map.md"
           },
           {
-            "md": "./intro/demo/demo_choropleth.md"
-          },
-          {
             "md": "./intro/demo/demo_bubble.md"
           },
           {
             "md": "./intro/demo/demo_orthographic.md"
+          },
+          {
+            "md": "./intro/demo/demo_choropleth.md"
           }
         ]
       }]

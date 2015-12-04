@@ -51,14 +51,8 @@
             margin: 0 auto;
             padding: 30px;
         }
-
-        .legend {
-          height: 30px !important;
-        }
-
-        #area-stack .x.axis text{
-          transform: rotate(45deg);
-          text-anchor: start !important;
+        .glyphicon {
+          padding-right: 10px;
         }
     </style>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -98,9 +92,9 @@
                         <li>
                           <a href="/get_start">Get Started</a>
                         </li>
-                        <li>
+                        <!-- <li>
                           <a href="/docs">Docs</a>
-                        </li>
+                        </li> -->
                         <li>
                           <a href="/gallery">Gallery</a>
                         </li>
@@ -173,7 +167,7 @@
                                   <div class="col-md-12">
                                       <div class="service-content">
                                           {{#if name}}
-                                          <h3>{{name}}</h3>
+                                          <h3>{{{name}}}</h3>
                                           {{/if}}
                                           {{#if description}}
                                           <p>{{{description}}}</p>
