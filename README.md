@@ -16,7 +16,6 @@ Update git submodules
 $ npm run sync
 ```
 
-
 ## License
 
 MIT
