@@ -1,6 +1,13 @@
-<html><head>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
-    <title>react-d3-map gallery</title>
+    <title>{{item}}</title>
     <meta name="description" content="Painless Building D3 Charts - A whole new solution for building reusable components for d3 charts.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -12,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -23,9 +30,9 @@
 
 
     <!-- Google fonts - which you want to use - (rest you can just remove) -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -78,7 +85,7 @@
 
                     <!-- LOGO -->
                     <a class="navbar-brand page-scroll" href="/">
-                        <img src="/img/react-d3_2.png" alt="" style="width:150px">
+                        <img src="{{logo}}" alt="" style="width:150px">
                     </a>
                     <!-- END LOGO -->
 
@@ -118,98 +125,37 @@
     <!--Nav Bar -->
     <nav id="doc-sidebar" class="col-xs-3 bs-docs-sidebar">
         <ul id="sidebar" class="nav nav-stacked fixed">
+          {{#if product}}
+            {{#each product.data}}
               <li>
-              <a href="#react-d3-map">react-d3-map</a>
+              <a href="#{{toID name}}">{{name}}</a>
               </li>
-              <li>
-              <a href="#react-d3-bubble">react-d3-bubble</a>
-              </li>
-              <li>
-              <a href="#react-d3-choropleth">react-d3-choropleth</a>
-              </li>
-              <li>
-              <a href="#react-d3-orthographic">react-d3-orthographic</a>
-              </li>
+            {{/each}}
+          {{/if}}
         </ul>
     </nav>
 
     <!-- SERVICES -->
-        <section id="react-d3-map" class="section text-center group">
+    {{#if product}}
+      {{#each product.data}}
+        <section id="{{toID name}}" class="section text-center group">
             <div class="container">
-                <h2 class="section-title wow fadeIn">react-d3-map</h2>
+                <h2 class="section-title wow fadeIn">{{name}}</h2>
                 <div class="row text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="markdown-body">
-                      <h1 id="react-d3-map">react-d3-map</h1>
-<p>react-d3 interactive map, just like Leaflet!!! But BYE BYE layers!!!! We use SVG components to replace layers!!!</p>
-<p><a href="http://github.com/react-d3/react-d3-map">
-  <button type="button" class="btn btn-default">View on Github</button>
-</a></p>
+                  {{#if md}}
 
+                    <div class="markdown-body">
+                      <section data-markdown="{{md}}" >
+                      </section>
                     </div>
-                  <div class="markdown-body">
-                  </div>
+                  {{/if}}
                 </div>
                 <!--.row-->
             </div>
             <!--/.container -->
         </section>
-        <section id="react-d3-bubble" class="section text-center group">
-            <div class="container">
-                <h2 class="section-title wow fadeIn">react-d3-bubble</h2>
-                <div class="row text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="markdown-body">
-                      <h1 id="react-d3-map-bubble">react-d3-map-bubble</h1>
-<p>bubble in maps.</p>
-<p><a href="http://github.com/react-d3/react-d3-map-bubble">
-  <button type="button" class="btn btn-default">View on Github</button>
-</a></p>
-
-                    </div>
-                  <div class="markdown-body">
-                  </div>
-                </div>
-                <!--.row-->
-            </div>
-            <!--/.container -->
-        </section>
-        <section id="react-d3-choropleth" class="section text-center group">
-            <div class="container">
-                <h2 class="section-title wow fadeIn">react-d3-choropleth</h2>
-                <div class="row text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="markdown-body">
-                      <h1 id="react-d3-map-choropleth">react-d3-map-choropleth</h1>
-<p>Choropleth in maps.</p>
-<p><a href="http://github.com/react-d3/react-d3-map-choropleth">
-  <button type="button" class="btn btn-default">View on Github</button>
-</a></p>
-
-                    </div>
-                  <div class="markdown-body">
-                  </div>
-                </div>
-                <!--.row-->
-            </div>
-            <!--/.container -->
-        </section>
-        <section id="react-d3-orthographic" class="section text-center group">
-            <div class="container">
-                <h2 class="section-title wow fadeIn">react-d3-orthographic</h2>
-                <div class="row text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="markdown-body">
-                      <h1 id="react-d3-map-orthographic">react-d3-map-orthographic</h1>
-<p>Orthographic with maps.</p>
-<p><a href="http://github.com/react-d3/react-d3-map-orthographic">
-  <button type="button" class="btn btn-default">View on Github</button>
-</a></p>
-
-                    </div>
-                  <div class="markdown-body">
-                  </div>
-                </div>
-                <!--.row-->
-            </div>
-            <!--/.container -->
-        </section>
+      {{/each}}
+    {{/if}}
     <!-- END SERVICES -->
 
     <!-- FOOTER -->
@@ -225,7 +171,7 @@
                 <!-- FOOTER CONTENT -->
                 <div class="col-md-6">
                     <div class="footer-content text-right">
-                        <p>© 2015 License Apache2.0, <a href="/">react-d3-map</a>
+                        <p>&copy; 2015 License Apache2.0, <a href="/">react-d3-map</a>
                         </p>
                     </div>
                 </div>
@@ -254,5 +200,4 @@
       ga('create', 'UA-67901975-1', 'auto');
       ga('send', 'pageview');
     </script>
-
-</body></html>
+</body>

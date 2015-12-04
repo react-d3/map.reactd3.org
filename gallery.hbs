@@ -143,12 +143,23 @@
                 <h2 class="section-title wow fadeIn">{{name}}</h2>
                 <div class="row text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
                   {{#if md}}
-
                     <div class="markdown-body">
                       <section data-markdown="{{md}}" >
                       </section>
                     </div>
                   {{/if}}
+                  <div class="markdown-body">
+                  {{#each item}}
+                    <div class="card">
+                      <a href="{{url}}">
+                        <img class="card-img-top" src="{{src}}" alt="cover">
+                        <div class="card-block">
+                          <p class="card-text">{{text}}</p>
+                        </div>
+                      </a>
+                    </div>
+                  {{/each}}
+                  </div>
                 </div>
                 <!--.row-->
             </div>

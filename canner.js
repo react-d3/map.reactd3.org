@@ -47,7 +47,7 @@ module.exports = [{
     }
   }
 },{
-  "layout": "./gallery.hbs",
+  "layout": "./docs.hbs",
   "filename": "./get_start/index.html",
   "helpers": ["./helper/ifCond.js","./helper/multipleOr.js", './helper/id.js'],
   "data": {
@@ -80,7 +80,7 @@ module.exports = [{
   }
 },
 {
-  "layout": "./gallery.hbs",
+  "layout": "./docs.hbs",
   "filename": "./docs/index.html",
   "helpers": ["./helper/ifCond.js","./helper/multipleOr.js", './helper/id.js'],
   "data": {
@@ -105,8 +105,85 @@ module.exports = [{
     "product": {
       "title": "react-d3-map",
       "data": [{
-        "name": "",
-        "md": ""
+        "name": "react-d3-map",
+        "md": "./intro/components/map.md",
+        "item": [
+          {
+            "url": "",
+            "src": "/img/map/line-map.png",
+            "text": "Interactive map with line and popup content"
+          },
+          {
+            "url": "",
+            "src": "/img/map/point-map.png",
+            "text": "Interactive map with marker and popup content"
+          },
+          {
+            "url": "",
+            "src": "/img/map/polygon-map.png",
+            "text": "Interactive map with polygon and popup content"
+          }
+        ]
+      }, {
+        "name": "react-d3-bubble",
+        "md": "./intro/components/bubble.md",
+        "item": [
+          {
+            "url": "",
+            "src": "/img/bubble/bubble-earthquake.png",
+            "text": "Map bubble to display global history earthquake"
+          },
+          {
+            "url": "",
+            "src": "/img/bubble/bubble-earthquake-tile.png",
+            "text": "Map bubble to display global history earthquake with tiles"
+          },
+          {
+            "url": "",
+            "src": "/img/bubble/bubble-us.png",
+            "text": "Map bubble to display US data."
+          }
+        ]
+      }, {
+        "name": "react-d3-choropleth",
+        "md": "./intro/components/choropleth.md",
+        "item": [
+          {
+            "url": "",
+            "src": "/img/choropleth/choropleth-twpopulation.png",
+            "text": "Map choropleth to display Taiwan population"
+          },
+          {
+            "url": "",
+            "src": "/img/choropleth/choropleth-twpopulation-tile.png",
+            "text": "Map choropleth to display Taiwan population with tiles"
+          },
+          {
+            "url": "",
+            "src": "/img/choropleth/choropleth-us.png",
+            "text": "Map choropleth to display US data."
+          }
+        ]
+      }, {
+        "name": "react-d3-orthographic",
+        "md": "./intro/components/orthographic.md",
+        "item": [
+          {
+            "url": "",
+            "src": "/img/orthographic/ortho-line.png",
+            "text": "Map orthographic to display line."
+          },
+          {
+            "url": "",
+            "src": "/img/orthographic/ortho-point.png",
+            "text": "Map orthographic to display point."
+          },
+          {
+            "url": "",
+            "src": "/img/orthographic/ortho-polygon.png",
+            "text": "Map orthographic to display polygon."
+          }
+        ]
       }]
     }
   }

@@ -175,6 +175,32 @@ a:hover {
   border: 3px solid #CCC;
 }
 
+.card {
+  width: 220px;
+  margin: 5px;
+  position: relative;
+  border: .0625em solid #e5e5e5 !important;
+  border-radius: .25em !important;
+  float: left;
+}
+
+.card:hover {
+  border: .15em solid #24C0D9 !important;
+  cursor: pointer;
+}
+
+.card-block {
+  padding: 1.25em !important;
+}
+
+.card-text:last-child {
+  margin-bottom: 0 !important;
+}
+
+.card-img-top {
+  border-radius: .25em .25em 0 0 !important;
+}
+
 /* PORTFOLIO
 ================================================ */
 
