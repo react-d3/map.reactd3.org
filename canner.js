@@ -129,17 +129,12 @@ module.exports = [{
         "md": "./intro/components/bubble.md",
         "item": [
           {
-            "url": "",
-            "src": "/img/bubble/bubble-earthquake.png",
-            "text": "Map bubble to display global history earthquake"
-          },
-          {
-            "url": "",
+            "url": "/gallery/demo/bubble/earthquake.html",
             "src": "/img/bubble/bubble-earthquake-tile.png",
             "text": "Map bubble to display global history earthquake with tiles"
           },
           {
-            "url": "",
+            "url": "/gallery/demo/bubble/mapbubble.html",
             "src": "/img/bubble/bubble-us.png",
             "text": "Map bubble to display US data."
           }
@@ -149,19 +144,14 @@ module.exports = [{
         "md": "./intro/components/choropleth.md",
         "item": [
           {
-            "url": "",
-            "src": "/img/choropleth/choropleth-twpopulation.png",
-            "text": "Map choropleth to display Taiwan population"
-          },
-          {
-            "url": "",
+            "url": "/gallery/demo/choropleth/twpopulation.html",
             "src": "/img/choropleth/choropleth-twpopulation-tile.png",
             "text": "Map choropleth to display Taiwan population with tiles"
           },
           {
-            "url": "",
+            "url": "/gallery/demo/choropleth/unemployment.html",
             "src": "/img/choropleth/choropleth-us.png",
-            "text": "Map choropleth to display US data."
+            "text": "Map choropleth to display US unemployment data."
           }
         ]
       }, {
@@ -169,17 +159,17 @@ module.exports = [{
         "md": "./intro/components/orthographic.md",
         "item": [
           {
-            "url": "",
+            "url": "/gallery/demo/orthographic/line.html",
             "src": "/img/orthographic/ortho-line.png",
             "text": "Map orthographic to display line."
           },
           {
-            "url": "",
+            "url": "/gallery/demo/orthographic/line.html",
             "src": "/img/orthographic/ortho-point.png",
             "text": "Map orthographic to display point."
           },
           {
-            "url": "",
+            "url": "/gallery/demo/orthographic/line.html",
             "src": "/img/orthographic/ortho-polygon.png",
             "text": "Map orthographic to display polygon."
           }
