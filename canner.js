@@ -109,17 +109,17 @@ module.exports = [{
         "md": "./intro/components/map.md",
         "item": [
           {
-            "url": "",
+            "url": "/gallery/demo/map/line.html",
             "src": "/img/map/line-map.png",
             "text": "Interactive map with line and popup content"
           },
           {
-            "url": "",
+            "url": "/gallery/demo/map/marker.html",
             "src": "/img/map/point-map.png",
             "text": "Interactive map with marker and popup content"
           },
           {
-            "url": "",
+            "url": "/gallery/demo/map/polygon.html",
             "src": "/img/map/polygon-map.png",
             "text": "Interactive map with polygon and popup content"
           }
